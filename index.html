@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading a Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Reading a Book</h1>
+    <img class="book-image" src="book.jpg" alt="book">
+    <p>Reading a book is not a task or choar. It is fun take you time in diving deep. This will help you see how long it would take you read a book.</p>
+    <li>A book or noval contain 60,000 to 100,000 words on an Average.</li>
+    <li>Average reader reads 200–250 words per minute. </li>
+    <li> You can know a book down in 4 to 8 hours.</li><br>
+    
+    <label for="wordCount">Enter the word count of the book:</label><br>
+    <input type="number" id="wordCount"><br>
+
+    <label for="readerType">Select your reading speed:</label><br>
+    <select id="readerType">
+      <option value="average">Average Reader</option>
+      <option value="good">Good Reader</option>
+      <option value="expert">Expert Reader</option>
+    </select><br>
+  
+    <button onclick="calculateTime()">Calculate</button>
+  
+    <p id="result"></p>
+  
+    <script>
+      function calculateTime() {
+        // Get user input
+        const wordCount = document.getElementById('wordCount').value;
+        const readerType = document.getElementById('readerType').value;
+  
+        // Define reading speeds in words per minute
+        const speeds = {
+          average: 250,
+          good: 300,
+          expert: 400
+        };
+  
+        // Calculate reading time in minutes
+        const readingTimeInMinutes = wordCount / speeds[readerType];
+  
+        // Convert minutes to hours and minutes
+        const hours = Math.floor(readingTimeInMinutes / 60);
+        const minutes = Math.round(readingTimeInMinutes % 60);
+  
+        // Display the result
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `It will take approximately ${hours} hours and ${minutes} minutes to finish the book.`;
+      }
+    </script>
+</body>
+<footer>@all right reserved to Dev Samson Karatapu</footer>
+</html>

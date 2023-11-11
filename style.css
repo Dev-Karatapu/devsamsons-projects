@@ -1,0 +1,178 @@
+body{
+    padding-left: 40%;
+    padding-right: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgray;
+    
+}
+
+h1{
+    color: rgb(25, 83, 112)112);
+    text-shadow: 2px 2px 4px darkgrey;
+}
+
+.book-image {
+    max-width: 100%; /* Set the maximum width to the screen size */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+p{
+    color: rgb(40, 173, 173);
+    text-shadow: 2px 2px 4px black;
+}
+label{
+    color: rgb(40, 173, 173);
+    text-shadow: 2px 2px 4px black;
+}
+
+button {
+    border: rgb(71, 51, 13);
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #ff9800; /* Orange color */
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #bf7507; /* Darker shade on hover */
+    box-shadow: 2px 2px 4px black;
+}
+
+/* Media Queries for responsiveness */
+
+/* Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+
+    }
+    h1 {
+        font-size: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .book-image {
+        max-width: 100%; /* Set the maximum width to the screen size */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Remove extra spacing below the image */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+    label {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    button {
+        width: 70%;
+    }
+    input {
+        width: 80%; /* Make the input box 100% width of its container (label) */
+        padding: 8px; /* Optional: Add some padding for better visual appearance */
+        box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    }
+    li{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    label {
+        font-size: 16px;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    max-width: 600px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+} */
+

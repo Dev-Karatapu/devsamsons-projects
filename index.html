@@ -12,13 +12,13 @@
     <p>Reading a book is not a task or choar. It is fun take you time in diving deep. This will help you see how long it would take you read a book.</p>
     <li>A book or noval contain 60,000 to 100,000 words on an Average.</li>
     <li>Average reader reads 200–250 words per minute. </li>
-    <li> You can know a book down in 4 to 8 hours.</li><br>
+    <li> You can knock down a book in 4 to 8 hours.</li><br>
     
     <label for="wordCount">Enter the word count of the book:</label><br>
     <input type="number" id="wordCount"><br>
 
     <label for="readerType">Select your reading speed:</label><br>
-    <select id="readerType">
+    <select class="options" id="readerType">
       <option value="average">Average Reader</option>
       <option value="good">Good Reader</option>
       <option value="expert">Expert Reader</option>
@@ -38,7 +38,7 @@
         const speeds = {
           average: 250,
           good: 300,
-          expert: 400
+          expert: 350
         };
   
         // Calculate reading time in minutes

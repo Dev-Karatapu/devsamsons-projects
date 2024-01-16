@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credential Tracker</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+              <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+              <a href="#">Home</a>
+              <a href="about">About</a>
+              <a href="services">Services</a>
+              <a href="contact">Contact</a>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <h2 class="heading-line"> Do you keep forgetting your credential of Online Accounts, No Worries! Save your credential Hear and find it anytime. </h2>
+        <form id="findForm" action="/submit_form" method="post">
+            <h3>Enter Your Account name and email!</h3>
+            <div>
+                <lable for="account">Account Name:</lable>
+                <input type="text" id="account" name="account" placeholder="Facebook.com" required>
+            </div>
+            
+            <div>
+                <lable for="email">Email Address:</lable>
+                <input type="text" id="email" name="email" placeholder="bob@hotmail.com" required>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+
+            <div id="findResults"></div>
+        </form>
+
+
+
+
+        <form id="credentialForm" action="/submit_form" method="post">
+            <p>Please Enter your Account Credential!</p><br>
+            <label for="account">Account:</label>
+            <input type="text" id="account" name="account" required><br>
+
+            <label for="userId">User Id:</label>
+            <input type="text" id="userId" name="userId" required><br>
+
+            <label for="email">Email Id:</label>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Save">
+            <input type="submit" value="Update">
+        </form>
+
+    </main>
+
+
+    <footer>
+        <!-- My footer -->
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
